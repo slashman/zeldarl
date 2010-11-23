@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="crl/ui/graphicsUI/|crl/conf/gfx/data/|sz/gadgets/" kind="src" path="src"/>
+	<classpathentry kind="lib" path="distro/lib/jcurses-x.jar"/>
+	<classpathentry kind="lib" path="distro/lib/jl1.0.jar"/>
+	<classpathentry kind="lib" path="distro/lib/MinML.jar"/>
+	<classpathentry kind="lib" path="lib/jcurses-x.jar"/>
+	<classpathentry kind="lib" path="lib/jl1.0.jar"/>
+	<classpathentry kind="lib" path="lib/MinML.jar"/>
+	<classpathentry kind="lib" path="yguard.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
