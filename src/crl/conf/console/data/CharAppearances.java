@@ -51,8 +51,8 @@ public class CharAppearances {
 			new CharAppearance("FOREST", ',', ConsoleSystemInterface.GREEN),
 			new CharAppearance("MOUNTAIN", '^', ConsoleSystemInterface.GRAY),
 			new CharAppearance("DESERT", '~', ConsoleSystemInterface.YELLOW),
-			new CharAppearance("WATER", '~', ConsoleSystemInterface.DARK_BLUE),
-			new CharAppearance("SHALLOW_WATER", '~', ConsoleSystemInterface.BLUE),
+			new CharAppearance("WATER", '~', ConsoleSystemInterface.BLUE),
+			new CharAppearance("SHALLOW_WATER", '-', ConsoleSystemInterface.BLUE),
 			new CharAppearance("FOREST_TREE", '&', ConsoleSystemInterface.BROWN),
 			new CharAppearance("CACTUS", 't', ConsoleSystemInterface.GREEN),
 			new CharAppearance("PLAINS_TREE", '&', ConsoleSystemInterface.GREEN),
@@ -143,7 +143,7 @@ public class CharAppearances {
 			new CharAppearance("ALTARSOMARIA_X", '?', ConsoleSystemInterface.RED),
 			new CharAppearance("ALTARYENDOR_X", '?', ConsoleSystemInterface.YELLOW),
 			
-			new CharAppearance("LAKE", '~', ConsoleSystemInterface.DARK_BLUE),
+			new CharAppearance("LAKE", '~', ConsoleSystemInterface.BLUE),
 			
 			
 			// Monsters
