@@ -20,7 +20,7 @@ public class SwingConsoleFrame extends javax.swing.JFrame{
     private void initComponents() {
         swingConsolePanel = new SwingConsolePanel();
         getContentPane().setLayout(new BorderLayout(1,1));
-        setTitle("SwingConsoleBox0.1 - Santiago Zapata");
+        setTitle("ZeldaRL");
         setBackground(Color.black);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         getContentPane().add(swingConsolePanel);
