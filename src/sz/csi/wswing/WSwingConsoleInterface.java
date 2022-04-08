@@ -280,7 +280,6 @@ public class WSwingConsoleInterface implements ConsoleSystemInterface, Runnable,
 			String fnt = br.readLine();
 			br.close();
 			if (!fnt.equals("NFE")){
-				System.out.println("Using font "+fnt);
 				return fnt;
 			}
 		} catch (IOException ioe){
@@ -293,18 +292,9 @@ public class WSwingConsoleInterface implements ConsoleSystemInterface, Runnable,
 		}
 
 		String x [] = GraphicsEnvironment.getLocalGraphicsEnvironment().getAvailableFontFamilyNames();
-		boolean lucida = false, courier=false;
     	for (int i = 0; i < x.length; i++)
     		if (x[i].equals("Lucida Console"))
-    			lucida = true;
-    		else
-			if (x[i].equals("Courier New"))
-				courier = true;
-    	if (courier)
-			return "Courier New";
-    	else
-    	if (lucida)
-			return "Lucida Console";
+    			return "Lucida Console";
 		return "Monospaced";
     	
 	}
@@ -344,7 +334,8 @@ public class WSwingConsoleInterface implements ConsoleSystemInterface, Runnable,
 		String strConsoleFont  = loadFont();
 		consoleFont = new Font (strConsoleFont, Font.PLAIN, fontSize);
 		targetFrame.setFont(consoleFont);
-		targetPanel.setFont(consoleFont);
+		targetPanel.setDisplayFont(consoleFont);
+		targetPanel.dirty();
 		
 	}
 

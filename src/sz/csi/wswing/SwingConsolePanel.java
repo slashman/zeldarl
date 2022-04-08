@@ -32,7 +32,6 @@ public class SwingConsolePanel extends JPanel{
         setBackground(backGround);
         this.xdim = xdim;
 		this.ydim = ydim;
-		this.f = f;
         charBuffer = new char [xdim] [ydim];
         colorBuffer = new Color [xdim][ydim];
         updateBuffer = new boolean [xdim][ydim];
@@ -47,10 +46,7 @@ public class SwingConsolePanel extends JPanel{
         //Double Buffer
         imageBuff = createImage(width, height);
         graphicsBuff = imageBuff.getGraphics();
-        graphicsBuff.setFont(f);
-        fontSize = f.getSize();
-        fontWidth = (int) (fontSize * 0.7);
-		fontDown = (int)(fontSize * 1.3);
+        setDisplayFont(f);
 		repaint();
     }
 
@@ -83,8 +79,12 @@ public class SwingConsolePanel extends JPanel{
     	//autoUpdate = false;
     }
     
-    public void setFont(Font pFont){
+    public void setDisplayFont(Font pFont){
     	f = pFont;
+    	graphicsBuff.setFont(f);
+        fontSize = f.getSize();
+        fontWidth = (int) (fontSize * 0.7);
+		fontDown = (int)(fontSize * 1.3);
     }
 
 	public char peekChar(int x, int y){
@@ -98,6 +98,18 @@ public class SwingConsolePanel extends JPanel{
 		for (int x = 0; x < charBuffer.length; x++)
 			for (int y = 0; y < charBuffer[0].length; y++){
 				charBuffer[x][y] = ' ';
+				updateBuffer[x][y] = true;
+			}
+	}
+	
+	public void dirty(){
+        width =  Toolkit.getDefaultToolkit().getScreenSize().width;
+        height = Toolkit.getDefaultToolkit().getScreenSize().height;
+        setBounds(0,0, width, height);
+        imageBuff = createImage(width, height);
+        graphicsBuff = imageBuff.getGraphics();
+		for (int x = 0; x < charBuffer.length; x++)
+			for (int y = 0; y < charBuffer[0].length; y++){
 				updateBuffer[x][y] = true;
 			}
 	}
