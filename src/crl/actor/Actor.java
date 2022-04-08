@@ -18,6 +18,7 @@ public class Actor implements Cloneable, java.io.Serializable, PriorityEnqueable
 	
 	protected ActionSelector selector;
 	private /*transient*/ Position position = new Position(0,0,0);
+	private /*transient*/ Position respawnPosition = new Position(0,0,0);
 	private /*transient*/ int nextTime=10;
 	
 	public int getCost(){
@@ -74,6 +75,14 @@ public class Actor implements Cloneable, java.io.Serializable, PriorityEnqueable
 		position.x = x;
 		position.y = y;
 		position.z = z;
+	}
+	
+	public void setRespawnPosition (Position respawnPosition){
+		this.respawnPosition = respawnPosition;
+	}
+	
+	public void respawn () {
+		this.setPosition(respawnPosition.x, respawnPosition.y, respawnPosition.z);
 	}
 
 	public void die(){

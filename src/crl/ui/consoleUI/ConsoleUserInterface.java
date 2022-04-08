@@ -385,6 +385,7 @@ public class ConsoleUserInterface extends UserInterface implements CommandListen
     	boolean halfHeart = player.getHearts() % 2 == 1;
     	int totalHearts = (int)(player.getHeartsMax() / 2.0D);
     	si.print(62,1, "--LIFE--", ConsoleSystemInterface.WHITE);
+    	si.print(55,2, "                    ", ConsoleSystemInterface.WHITE);
     	for (int i = 0; i < totalHearts; i++){
     		if (i == fullHearts && halfHeart)
 				si.print(55+i,2, 'v', ConsoleSystemInterface.RED);

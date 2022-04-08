@@ -936,7 +936,6 @@ public class Player extends Actor {
 	
 	public void checkDeath(Monster damager){
 		if (isDead()){
-			die();
 			gameSessionInfo.setDeathCause(GameSessionInfo.KILLED);
 			gameSessionInfo.setKillerMonster(damager);
 			gameSessionInfo.setDeathLevel(level.getLevelNumber());

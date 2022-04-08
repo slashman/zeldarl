@@ -35,6 +35,8 @@ public class Game implements CommandListener, PlayerEventListener, java.io.Seria
 		return canSave;
 	}
 	
+	private boolean permadeath = false;
+	
 	private Hashtable /*Level*/  storedLevels = new Hashtable();
 	private boolean endGame;
 	private long turns;
@@ -219,17 +221,17 @@ public class Game implements CommandListener, PlayerEventListener, java.io.Seria
 			case Player.DEATH:
 				ui.refresh();
 				ui.showSystemMessage(Util.randomElementOf(DEATHMESSAGES) +  " [Press Space to continue]");
-				finishGame();
+				softDeath();
 				break;
 			case Player.DROWNED:
 				ui.refresh();
 				ui.showSystemMessage("You fell into the water and drowned!  [Press Space to continue]");
-				finishGame();
+				softDeath();
 				break;
 			case Player.EVT_SMASHED:
 				ui.refresh();
 				ui.showSystemMessage("Your body collapses!  [Press Space to continue]");
-				finishGame();
+				softDeath();
 				break;
 			/*case Player.EVT_NEXT_LEVEL:
 				loadNextLevel();
@@ -258,6 +260,18 @@ public class Game implements CommandListener, PlayerEventListener, java.io.Seria
 		}
 		GameFiles.permadeath(player);
 		exitGame();
+	}
+	
+	private void softDeath(){
+		if (permadeath) {
+			finishGame();
+		} else {
+			if (player.getHeartsMax() > 6) {
+				player.setHeartsMax(player.getHeartsMax() - 2);
+			}
+			player.recoverHearts(20);
+			player.respawn();
+		}
 	}
 	
 	public void exitGame(){
@@ -368,10 +382,15 @@ public class Game implements CommandListener, PlayerEventListener, java.io.Seria
 		}
 		//currentLevel.setLevelNumber(targetLevelNumber);
 		player.setLevel(currentLevel);
+		Position entryPosition = null;
 		if(currentLevel.getExitFor(formerLevelID) != null){
-			player.setPosition(currentLevel.getExitFor(formerLevelID));
+			entryPosition = currentLevel.getExitFor(formerLevelID);
 		} else if(currentLevel.getExitFor("_START") != null) {
-			player.setPosition(currentLevel.getExitFor("_START"));
+			entryPosition = currentLevel.getExitFor("_START");
+		}
+		if (entryPosition != null) {
+			player.setPosition(entryPosition);
+			player.setRespawnPosition(entryPosition);
 		}
 		
 		if (currentLevel.isHostageSafe()){
