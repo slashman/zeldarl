@@ -398,7 +398,7 @@ public class Main {
 	
 	public static void main(String args[]){
 		
-		mode = JCURSES_CONSOLE;
+		mode = SWING_CONSOLE;
 		uiFile = "slash-retrovga.ui";
 		if (args!= null && args.length > 0){
 			if (args[0].equalsIgnoreCase("sgfx")){
