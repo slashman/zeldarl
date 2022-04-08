@@ -427,7 +427,7 @@ public class Game implements CommandListener, PlayerEventListener, java.io.Seria
 	}
 	
 	public static String getVersion(){
-		return "0.72a";
+		return "0.8";
 	}
 	
 	public void setInterfaces(UserInterface pui){

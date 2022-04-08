@@ -84,7 +84,7 @@ public class Main {
 
 	private static void init(){
 		System.out.println("ZeldaRL "+Game.getVersion());
-		System.out.println("Slash ~ 2007");
+		System.out.println("Slash ~ 2007, 2022");
 		System.out.println("Reading configuration");
     	readConfiguration();
     	
