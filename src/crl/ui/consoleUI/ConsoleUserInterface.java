@@ -933,6 +933,7 @@ public class ConsoleUserInterface extends UserInterface implements CommandListen
 		}
 		
 		si.print(55, 24, "[ Space to Continue ]");
+		si.refresh();
 		si.waitKey(CharKey.SPACE);
 		si.restore();
 		si.refresh();
