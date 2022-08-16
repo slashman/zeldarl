@@ -212,9 +212,7 @@ public class Game implements CommandListener, PlayerEventListener, java.io.Seria
     }
 
     private String [] DEATHMESSAGES = new String[]{
-		"G A M E   O V E R",
-		"Game Over",
-		"Better luck next time, Hero of time"
+		"The blessed wind of Farore grants you another chance."
     };
 	public void informEvent(int code, Object param){
 		switch (code){
