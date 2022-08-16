@@ -203,43 +203,43 @@ public class CharKey {
     }
     
     public boolean isDownArrow (){
-		return code == CharKey.DARROW || code == CharKey.N2;
+		return code == CharKey.DARROW || code == CharKey.N2 || code == CharKey.j;
 	}
 
     public boolean isDownLeftArrow (){
-		return code == CharKey.N1;
+		return code == CharKey.N1 || code == CharKey.b;
 	}
 
     public boolean isDownRightArrow (){
-		return code == CharKey.N3;
+		return code == CharKey.N3 || code == CharKey.n;
 	}
     
     public boolean isCenterArrow (){
-		return code == CharKey.N5;
+		return code == CharKey.N5 || code == CharKey.s;
 	}
 
     public boolean isLeftArrow (){
-		return code == CharKey.LARROW || code == CharKey.N4;
+		return code == CharKey.LARROW || code == CharKey.N4  || code == CharKey.h;
 	}
 
     public boolean isRightArrow (){
-		return code == CharKey.RARROW || code == CharKey.N6;
+		return code == CharKey.RARROW || code == CharKey.N6 || code == CharKey.l;
 	}
 
     public boolean isUpArrow (){
-		return code == CharKey.UARROW || code == CharKey.N8;
+		return code == CharKey.UARROW || code == CharKey.N8 || code == CharKey.k;
 	}
 
     public boolean isUpLeftArrow (){
-		return code == CharKey.N7;
+		return code == CharKey.N7 || code == CharKey.y;
 	}
 
     public boolean isUpRightArrow (){
-		return code == CharKey.N9;
+		return code == CharKey.N9 || code == CharKey.u;
 	}
 
     public boolean isSelfArrow (){
-		return code == CharKey.N5;
+		return code == CharKey.N5 || code == CharKey.s;
 	}
     
     public boolean isMetaKey(){

@@ -203,30 +203,34 @@ public class CharDisplay extends Display{
 	public void showHelp(){
 		si.cls();
 	    
-		si.print(2,0, "Help", ConsoleSystemInterface.WHITE);
-		si.print(2,1, "Actions", ConsoleSystemInterface.WHITE);
+		si.print(2,1, "Actions", ConsoleSystemInterface.RED);
 		si.print(2,2,  "a Attack: Uses a weapon in a given direction");
 		si.print(2,3,  "d Drop: Discards an item");
 		si.print(2,4,  "e Equip: Wears a weapon or armor");
 		si.print(2,5,  "f Fire: Targets a weapon on a given position");
 		si.print(2,6,  "g Get: Picks up an item");
 		//si.print(2,7,  "r Reload: Reloads the equiped weapon");
-		si.print(2,7,  "R Ready: Readies a secondary weapon");
-		si.print(2,8, "s Skills: Shows the skill list");
+		si.print(2,7, "M Magic: Shows the spells list");
+		si.print(2,8,  "R Ready: Readies a secondary weapon");
 		si.print(2,9, "t Tactics: Switches normal and agressive tactics");
-		si.print(2,10,  "u Use: Uses an Item");
+		si.print(2,10,  "U Use: Uses an Item");
 		//si.print(2,12,  "U Unequip: Take off an item");
 		si.print(2,11,  "x Switch: Switched primary and secondary weapon");
 		si.print(2,12,  "z Boomerang");
 		
+		si.print(50,1, "Movement", ConsoleSystemInterface.RED);
+		si.print(50,2, "* Arrow Keys", ConsoleSystemInterface.WHITE);
+		si.print(50,3, "* Numpad", ConsoleSystemInterface.WHITE);
+		si.print(50,4, "* vi keys [hjkl+yubn]", ConsoleSystemInterface.WHITE);
+		si.print(50,5, "s Self", ConsoleSystemInterface.WHITE);
+		
 
-		si.print(2,14, "Commands", ConsoleSystemInterface.WHITE);
-
+		si.print(2,14, "Commands", ConsoleSystemInterface.RED);
 		si.print(2,15, "? Help: Shows Help (this screen)");
 		si.print(2,16, "c Character: Shows the character stats");
 		si.print(2,17, "D Dump: Dumps you character info to a file");
 		si.print(2,18, "i Inventory: Shows the inventory");
-		si.print(2,19, "l Look: Identifies map symbols and monsters");
+		si.print(2,19, "L Look: Identifies map symbols and monsters");
 		si.print(2,20, "m Messages: Shows the message history");
 		//si.print(2,21, "M Map: Shows the level map in multiple screens");
 		si.print(2,21, "T Music: Turns music on/off");
@@ -234,7 +238,7 @@ public class CharDisplay extends Display{
 		si.print(2,23, "S Save: Saves game");
 		
 		
-		//si.print(2,24,"[Press Space to continue]");
+		si.print(50,23,"[Press Space to continue]");
 
 		si.refresh();
 		si.waitKey(CharKey.SPACE);

@@ -1100,7 +1100,7 @@ public class ConsoleUserInterface extends UserInterface implements CommandListen
   		menuBox.setForeColor(ConsoleSystemInterface.WHITE);
   		menuBox.setPosition(24,4);
   		menuBox.setMenuItems(skills);
-  		menuBox.setTitle("Skills");
+  		menuBox.setTitle("Spells");
   		menuBox.setPromptSize(0);
   		menuBox.draw();
 		si.refresh();
