@@ -22,6 +22,7 @@ public class Player extends Actor {
 	public final static int
 	SEX_MALE = 1,
 	SEX_FEMALE = 2;
+	public final static int HEARTS_CAP = 80;
 	
 	private String name;
 	private int sex;
@@ -989,6 +990,9 @@ public class Player extends Actor {
 	
 	public void setHeartsMax(int integrityMax) {
 		this.heartsMax = integrityMax;
+		if (this.heartsMax > HEARTS_CAP) {
+			this.heartsMax = HEARTS_CAP;
+		}
 	}
 
 	public int getHearts() {
