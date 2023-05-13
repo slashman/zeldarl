@@ -34,8 +34,8 @@ public class CharDisplay extends Display{
 	
 	public int showTitleScreen(){
 		si.cls();
-		String tempString = "The Legend of Zelda - The Rainbow Maiden"; 
-		si.print((80-tempString.length())/2,3, tempString, ConsoleSystemInterface.GREEN);
+		String tempString = "ZeldaRL"; 
+		si.print((80-tempString.length())/2,3, tempString, ConsoleSystemInterface.LEMON);
 		tempString = "a. New Game";
 		si.print((80-tempString.length())/2,9, tempString, ConsoleSystemInterface.WHITE);
 		tempString = "b. Prelude";
