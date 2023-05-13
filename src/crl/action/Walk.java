@@ -6,7 +6,7 @@ import sz.util.Util;
 import zrl.player.Player;
 import crl.actor.Actor;
 import crl.feature.Feature;
-
+import crl.game.SFXManager;
 import crl.level.Cell;
 import crl.level.Level;
 import crl.monster.Monster;
@@ -167,6 +167,8 @@ public class Walk extends Action{
 		}
        	if (bumped)
        		aPlayer.setLastWalkingDirection(Action.SELF);
+       	else
+       		SFXManager.play("wav/FS_Grass_01.wav");
        	Debug.exitMethod();
 	}
 
