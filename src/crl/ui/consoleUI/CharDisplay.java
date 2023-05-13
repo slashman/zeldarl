@@ -44,7 +44,7 @@ public class CharDisplay extends Display{
 		si.print((80-tempString.length())/2,11, tempString, ConsoleSystemInterface.WHITE);
 		tempString = "d. Quit";
 		si.print((80-tempString.length())/2,12, tempString, ConsoleSystemInterface.WHITE);
-		tempString = "ZeldaRL v"+Game.getVersion()+", Slash ~ 2007, 2022";
+		tempString = "ZeldaRL v"+Game.getVersion()+", Slash ~ 2007, 2023";
 		si.print((80-tempString.length())/2,19, tempString, ConsoleSystemInterface.WHITE);
 		tempString = "Zelda and all used names are a copyright of Nintendo";
 		si.print((80-tempString.length())/2,20, tempString, ConsoleSystemInterface.WHITE);
@@ -76,10 +76,10 @@ public class CharDisplay extends Display{
 	
 	public void showIntro(Player player){
 		si.cls();
-		showScreen("Seven days ago, the world changed.... XXX Yellow flames covered the skies of Hyrule, summoning "+
-				"everything into darkness. You have been hidding in your house, as everybody else has, while "+
-"monsters roam the countryside and the world seems to tear apart. XXX This night you have been rolling in your "+
-"bed for what appears to be ages. Finally, you are asleep.");
+		showScreen("Seven days ago, the world changed....");
+		showScreen("Yellow flames covered the skies of Hyrule, covering everything in darkness. You have been hiding in your house, as everybody else has, while "+
+				"monsters roam the countryside and the world seems to tear apart. XXX XXX This night you have been rolling in your "+
+"bed for too long. XXX XXX Finally, you are asleep.");
 		
 		showScreen("You open your eyes to find yourself standing in front of a strange looking " +
 				"cavern of white stone. Your sword and shield are in your hands, and you feel a voice " +
@@ -91,10 +91,10 @@ public class CharDisplay extends Display{
 	
 	public void showIntro2(Player player){
 		si.cls();
-		showScreen("Seven days ago, the world changed.... XXX XXX Yellow flames covered the skies of Hyrule, summoning "+
-				"everything into darkness. You have been hidding in your house, as everybody else has, while "+
-"monsters roam the countryside and the world seems to tear apart. XXX XXX This night you have been rolling in your "+
-"bed for what appears to be ages. XXX XXX Finally, you are asleep.");
+		showScreen("Seven days ago, the world changed....");
+		showScreen("Yellow flames covered the skies of Hyrule, covering everything in darkness. You have been hiding in your house, as everybody else has, while "+
+				"monsters roam the countryside and the world seems to tear apart. XXX XXX This night you have been rolling in your "+
+"bed for too long. XXX XXX Finally, you are asleep.");
 		
 		showScreen("You open your eyes to find yourself standing in front of a strange looking " +
 				"cavern of white stone. XXX XXX Your sword and shield are in your hands, and you feel a voice " +
