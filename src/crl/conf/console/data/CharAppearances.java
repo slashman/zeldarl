@@ -8,13 +8,13 @@ public class CharAppearances {
 	private Appearance [] defs = new Appearance[]{
 			new CharAppearance("VOID", ' ', ConsoleSystemInterface.BLACK),
 			new CharAppearance("SHADOW", '_', ConsoleSystemInterface.WHITE),
-			new CharAppearance("CAVE_WALL", '#', ConsoleSystemInterface.BROWN),
-			new CharAppearance("STONE_WALL", '#', ConsoleSystemInterface.WHITE),
+			new CharAppearance("CAVE_WALL", '▒', ConsoleSystemInterface.BROWN),
+			new CharAppearance("STONE_WALL", '▒', ConsoleSystemInterface.WHITE),
 			new CharAppearance("MOSS", '.', ConsoleSystemInterface.GREEN),
 			new CharAppearance("CAVE_FLOOR", '.', ConsoleSystemInterface.BROWN),
 			new CharAppearance("STONE_FLOOR", '.', ConsoleSystemInterface.WHITE),
 			new CharAppearance("DDOOR", '%', ConsoleSystemInterface.CYAN),
-			new CharAppearance("METAL_WALL", '#', ConsoleSystemInterface.WHITE),
+			new CharAppearance("METAL_WALL", '▒', ConsoleSystemInterface.WHITE),
 			new CharAppearance("AUTO_DOOR_OPEN", '/', ConsoleSystemInterface.BLUE),
 			new CharAppearance("AUTO_DOOR_CLOSED", 'O', ConsoleSystemInterface.BLUE),
 			new CharAppearance("GRANITE_FLOOR", ':', ConsoleSystemInterface.WHITE),
@@ -48,14 +48,14 @@ public class CharAppearances {
 			new CharAppearance("STAIRSUP", '<', ConsoleSystemInterface.RED),
 			
 			new CharAppearance("GRASS", '.', ConsoleSystemInterface.BROWN),
-			new CharAppearance("FOREST", ',', ConsoleSystemInterface.GREEN),
-			new CharAppearance("MOUNTAIN", '^', ConsoleSystemInterface.GRAY),
-			new CharAppearance("DESERT", ',', ConsoleSystemInterface.YELLOW),
+			new CharAppearance("FOREST", '.', ConsoleSystemInterface.GREEN),
+			new CharAppearance("MOUNTAIN", '▒', ConsoleSystemInterface.GRAY),
+			new CharAppearance("DESERT", '.', ConsoleSystemInterface.YELLOW),
 			new CharAppearance("WATER", '~', ConsoleSystemInterface.DARK_BLUE),
 			new CharAppearance("SHALLOW_WATER", '.', ConsoleSystemInterface.BLUE),
-			new CharAppearance("FOREST_TREE", '*', ConsoleSystemInterface.BROWN),
-			new CharAppearance("CACTUS", '*', ConsoleSystemInterface.GREEN),
-			new CharAppearance("PLAINS_TREE", '*', ConsoleSystemInterface.GREEN),
+			new CharAppearance("FOREST_TREE", '♠', ConsoleSystemInterface.BROWN),
+			new CharAppearance("CACTUS", '+', ConsoleSystemInterface.GREEN),
+			new CharAppearance("PLAINS_TREE", '♣', ConsoleSystemInterface.GREEN),
 			
 			new CharAppearance("FORESTDUNGEON", '#', ConsoleSystemInterface.RED),
 			new CharAppearance("DESERTDUNGEON", '#', ConsoleSystemInterface.RED),
@@ -68,17 +68,17 @@ public class CharAppearances {
 			
 			new CharAppearance("RUINEDPILLAR", '!', ConsoleSystemInterface.BROWN),
 			new CharAppearance("REDCARPET", '=', ConsoleSystemInterface.RED),
-			new CharAppearance("RUINSWALL", '#', ConsoleSystemInterface.BROWN),
+			new CharAppearance("RUINSWALL", '▒', ConsoleSystemInterface.BROWN),
 			new CharAppearance("RUINSFLOOR", '.', ConsoleSystemInterface.GRAY),
 			
 			new CharAppearance("FORESTTEMPLESTATUE", '@', ConsoleSystemInterface.TEAL),
 			new CharAppearance("FORESTTEMPLEWATER", '~', ConsoleSystemInterface.TEAL),
 			new CharAppearance("FORESTTEMPLEPILLAR", '!', ConsoleSystemInterface.BROWN),
 			new CharAppearance("GREENCARPET", '=', ConsoleSystemInterface.TEAL),
-			new CharAppearance("FORESTTEMPLEWALL", '#', ConsoleSystemInterface.DARK_BLUE),
+			new CharAppearance("FORESTTEMPLEWALL", '▒', ConsoleSystemInterface.DARK_BLUE),
 			new CharAppearance("FORESTTEMPLEFLOOR", '.', ConsoleSystemInterface.GREEN),
 			
-			new CharAppearance("HOUSEWALL", '#', ConsoleSystemInterface.BROWN),
+			new CharAppearance("HOUSEWALL", '▒', ConsoleSystemInterface.BROWN),
 			new CharAppearance("HOUSEFLOOR", '.', ConsoleSystemInterface.YELLOW),
 			new CharAppearance("HOUSEDOOR", '/', ConsoleSystemInterface.BROWN),
 			
@@ -94,14 +94,14 @@ public class CharAppearances {
 			new CharAppearance("GIANT_MOLDORM", 'W', ConsoleSystemInterface.BLUE),
 			new CharAppearance("GIANT_LANDMOLA", 'W', ConsoleSystemInterface.GRAY),
 			
-			new CharAppearance("SANDTEMPLEWALL", '#', ConsoleSystemInterface.YELLOW),
+			new CharAppearance("SANDTEMPLEWALL", '▒', ConsoleSystemInterface.YELLOW),
 			new CharAppearance("SANDTEMPLEFLOOR", '_', ConsoleSystemInterface.BROWN),
 			new CharAppearance("YELLOWCARPET", '=', ConsoleSystemInterface.YELLOW),
-			new CharAppearance("SAND", '~', ConsoleSystemInterface.YELLOW),
+			new CharAppearance("SAND", '≡', ConsoleSystemInterface.YELLOW),
 			new CharAppearance("SANDTEMPLESTATUE", 'h', ConsoleSystemInterface.BROWN),
 			new CharAppearance("SANDTEMPLEPILLAR", '^', ConsoleSystemInterface.BROWN),
 			
-			new CharAppearance("BUSH", '*', ConsoleSystemInterface.GREEN),
+			new CharAppearance("BUSH", '=', ConsoleSystemInterface.GREEN),
 			new CharAppearance("HEARTCONTAINER", 'V', ConsoleSystemInterface.WHITE),
 			new CharAppearance("HEALTH_POTION", '!', ConsoleSystemInterface.RED),
 			new CharAppearance("MAGIC_POTION", '!', ConsoleSystemInterface.LEMON),
@@ -150,29 +150,29 @@ public class CharAppearances {
 			new CharAppearance("OCTOROC", 'o', ConsoleSystemInterface.RED),
 			new CharAppearance("AQUAMENTUS", 'D', ConsoleSystemInterface.LEMON),
 			
-			new CharAppearance("MOUSE", 'r', ConsoleSystemInterface.GRAY),
+			new CharAppearance("MOUSE", 'r', ConsoleSystemInterface.WHITE),
 			new CharAppearance("KEESE", 'k', ConsoleSystemInterface.BLUE),
-			new CharAppearance("GEL", 'g', ConsoleSystemInterface.GREEN),
-			new CharAppearance("ZOL", 'G', ConsoleSystemInterface.GREEN),
-			new CharAppearance("POLS", 'r', ConsoleSystemInterface.PURPLE),
+			new CharAppearance("GEL", 'g', ConsoleSystemInterface.LEMON),
+			new CharAppearance("ZOL", 'G', ConsoleSystemInterface.LEMON),
+			new CharAppearance("POLS", 'r', ConsoleSystemInterface.MAGENTA),
 			new CharAppearance("LIGHT_SHADE", '@', ConsoleSystemInterface.WHITE),
 			
-			new CharAppearance("CROW", 'c', ConsoleSystemInterface.GRAY),
-			new CharAppearance("ZOLA", 'z', ConsoleSystemInterface.GREEN),
+			new CharAppearance("CROW", 'c', ConsoleSystemInterface.LIGHT_GRAY),
+			new CharAppearance("ZOLA", 'z', ConsoleSystemInterface.LEMON),
 			new CharAppearance("LEEVER", 'l', ConsoleSystemInterface.RED),
 			new CharAppearance("MOBLIN", 'm', ConsoleSystemInterface.RED),
-			new CharAppearance("ARCHER", 'a', ConsoleSystemInterface.GREEN),
+			new CharAppearance("ARCHER", 'a', ConsoleSystemInterface.LEMON),
 			new CharAppearance("TEKTITE", 't', ConsoleSystemInterface.RED),
 			new CharAppearance("PEAHAT", 'p', ConsoleSystemInterface.BROWN),
 			new CharAppearance("LYNEL", 'L', ConsoleSystemInterface.RED),
 			
 			new CharAppearance("DODONGO", 'D', ConsoleSystemInterface.RED),
-			new CharAppearance("MOSS_SHADE", '@', ConsoleSystemInterface.GREEN),
-			new CharAppearance("VIRE", 'V', ConsoleSystemInterface.PURPLE),
+			new CharAppearance("MOSS_SHADE", '@', ConsoleSystemInterface.LEMON),
+			new CharAppearance("VIRE", 'V', ConsoleSystemInterface.MAGENTA),
 			new CharAppearance("RED_GORIRA", 'g', ConsoleSystemInterface.RED),
 			new CharAppearance("SKELETON", 's', ConsoleSystemInterface.WHITE),
 			
-			new CharAppearance("ADAMANTWALL", '#', ConsoleSystemInterface.CYAN),
+			new CharAppearance("ADAMANTWALL", '▒', ConsoleSystemInterface.CYAN),
 			new CharAppearance("ADAMANTFLOOR", '.', ConsoleSystemInterface.TEAL),
 			new CharAppearance("FIREPIT", 'O', ConsoleSystemInterface.RED),
 			
@@ -180,9 +180,9 @@ public class CharAppearances {
 			new CharAppearance("BOOMERANG", ')', ConsoleSystemInterface.BLUE),
 			
 			new CharAppearance("HEART", 'v', ConsoleSystemInterface.RED),
-			new CharAppearance("RUPEE", '*', ConsoleSystemInterface.LEMON),
-			new CharAppearance("BLUE_RUPEE", '*', ConsoleSystemInterface.BLUE),
-			new CharAppearance("RED_RUPEE", '*', ConsoleSystemInterface.RED),
+			new CharAppearance("RUPEE", '$', ConsoleSystemInterface.LEMON),
+			new CharAppearance("BLUE_RUPEE", '$', ConsoleSystemInterface.BLUE),
+			new CharAppearance("RED_RUPEE", '$', ConsoleSystemInterface.RED),
 			
 			new CharAppearance("GIANT_RAT", 'r', ConsoleSystemInterface.BROWN),
 			new CharAppearance("GIANT_BAT", 'b', ConsoleSystemInterface.GRAY),
@@ -210,7 +210,7 @@ public class CharAppearances {
 	        new CharAppearance("CHIMERA", 'C', ConsoleSystemInterface.RED),
 	                
 	        //Characters
-			new CharAppearance("AVATAR", '@', ConsoleSystemInterface.GREEN),
+			new CharAppearance("AVATAR", '@', ConsoleSystemInterface.LEMON),
 			new CharAppearance("AVATAR_F", '@', ConsoleSystemInterface.PURPLE),
 	        
 			// Items
