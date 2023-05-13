@@ -538,7 +538,7 @@ public class Player extends Actor {
 					SFXManager.play("wav/LTTP_ItemFanfare.wav");
 					level.destroyFeature(destinationFeature);
 				}else if (destinationFeature.getEffect().equals("NOTE1")){
-					level.addMessage("You read the note: \"I will be here, waiting for you.\"");
+					level.addMessage("You read the note: \"Face your enemies directly to block their ranged attacks.\"");
 					level.destroyFeature(destinationFeature);
 				}
 			}
