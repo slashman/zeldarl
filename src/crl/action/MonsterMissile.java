@@ -97,7 +97,7 @@ public class MonsterMissile extends Action{
 				return;
 			}
 			if (aPlayer.getPosition().equals(destinationPoint)){
-				if (aPlayer.tryHit(aMonster, damage)){
+				if (aPlayer.tryHit(aMonster, damage, true, this.solveDirection(aMonster.getPosition(), aPlayer.getPosition()))){
 					if (effectType.equals("missile")){
 			        	drawEffect(EffectFactory.getSingleton().createDirectedEffect(aMonster.getPosition(), targetPosition, effectID, i-1));
 			        }else if (effectType.equals("directionalmissile")){

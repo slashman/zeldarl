@@ -404,9 +404,9 @@ public class ConsoleUserInterface extends UserInterface implements CommandListen
     	
     	si.print(1,1, "/-\\ /---\\", ConsoleSystemInterface.WHITE);
     	si.print(1,2, "| | |   |", ConsoleSystemInterface.WHITE);
-    	si.print(1,3, "| | \\---/", ConsoleSystemInterface.WHITE);
-    	si.print(1,4, "| |", ConsoleSystemInterface.WHITE);
-    	si.print(1,5, "| |", ConsoleSystemInterface.WHITE);
+    	si.print(1,3, "| | |   |", ConsoleSystemInterface.WHITE);
+    	si.print(1,4, "| | |   |", ConsoleSystemInterface.WHITE);
+    	si.print(1,5, "| | \\---/", ConsoleSystemInterface.WHITE);
     	si.print(1,6, "| |", ConsoleSystemInterface.WHITE);
     	si.print(1,7, "\\-/", ConsoleSystemInterface.WHITE);
     	int totalMagic = player.getMagicMax();
@@ -422,11 +422,8 @@ public class ConsoleUserInterface extends UserInterface implements CommandListen
     			si.print(2,2+i, '=', ConsoleSystemInterface.WHITE);
     	}
     	
-    	si.print(13,1, '*', ConsoleSystemInterface.LEMON);
+    	si.print(13,1, '$', ConsoleSystemInterface.LEMON);
     	si.print(12,2, fill(player.getGold()+"",3), ConsoleSystemInterface.WHITE);
-    	
-    	si.print(17,1, 'b', ConsoleSystemInterface.BLUE);
-    	si.print(16,2, "00", ConsoleSystemInterface.WHITE);
     	
     	si.print(20,1, '/', ConsoleSystemInterface.GRAY);
     	si.print(19,2, fill(player.getArrows()+"",2), ConsoleSystemInterface.WHITE);
@@ -442,6 +439,10 @@ public class ConsoleUserInterface extends UserInterface implements CommandListen
     	} else {
     		si.print(25,2, "         ", ConsoleSystemInterface.RED);
     	}
+    	
+		Position facingVariation = Action.directionToVariation(player.getLastWalkingDirection());
+		si.print(7 + facingVariation.x, 3 + facingVariation.y, "*", ConsoleSystemInterface.RED);
+		si.print(7,3, "@", ConsoleSystemInterface.LEMON);
     	
  		Debug.exitMethod();
     }

@@ -892,7 +892,7 @@ public class Player extends Actor {
 	
 	
 	public boolean tryHit(Monster attacker){
-		return tryHit(attacker, 0);
+		return tryHit(attacker, 0, false, 0);
 	}
 	
 	public final static int TACTIC_AGRESSIVE = 1, TACTIC_NORMAL = 0;
@@ -900,7 +900,7 @@ public class Player extends Actor {
 	
 	private Position previousPosition;
 	
-	public boolean tryHit(Monster attacker, int damagePlus){
+	public boolean tryHit(Monster attacker, int damagePlus, boolean isRanged, int incomingDirection){
 		if (this instanceof Player){
 			Player me = (Player) this;
 			int damage = attacker.getDamage()+damagePlus;
@@ -914,6 +914,9 @@ public class Player extends Actor {
 				blockChance += (int)(blockChance / 2.0D);
 			if (blockChance > 95)
 				blockChance = 95;
+			if (isRanged && incomingDirection == Action.oppositeFrom(this.lastWalkingDirection)) {
+				blockChance = 100;
+			}
 			if (me.getSecondaryWeapon() != null && me.getSecondaryWeapon().getDefinition().getEquipCategory().equals(ItemDefinition.CAT_SHIELD) && Util.chance(blockChance)){
 				level.addMessage("You block the attack with your "+me.getSecondaryWeapon().getDescription()+"!");
 				SFXManager.play("wav/LTTP_Shield.wav");

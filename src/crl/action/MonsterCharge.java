@@ -63,7 +63,7 @@ public class MonsterCharge extends Action{
 			}
 
 			if (aPlayer.getPosition().equals(destinationPoint)){
-				if (aPlayer.tryHit(aMonster, damage)){
+				if (aPlayer.tryHit(aMonster, damage, false, 0)){
 					
 					if (statusEffect != null){
 						if (statusEffect.equals(Player.STATUS_STUN)){
