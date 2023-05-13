@@ -168,8 +168,8 @@ public class ConsoleUserInterface extends UserInterface implements CommandListen
 					}
 					//if (!level.isVisible(runner.x, runner.y))
 					if (vcells[x][y] == null)
-						//si.print(PC_POS.x-xrange+x,PC_POS.y-yrange+y, cellChar, ConsoleSystemInterface.GRAY);
-						si.print(PC_POS.x-xrange+x,PC_POS.y-yrange+y, cellChar, app.getColor());
+						si.print(PC_POS.x-xrange+x,PC_POS.y-yrange+y, cellChar, ConsoleSystemInterface.GRAY);
+						//si.print(PC_POS.x-xrange+x,PC_POS.y-yrange+y, cellChar, app.getColor());
 				} else if (vcells[x][y] == null)
 					si.print(PC_POS.x-xrange+x,PC_POS.y-yrange+y, CharAppearance.getVoidAppearance().getChar(), CharAppearance.BLACK);
 				runner.y++;
