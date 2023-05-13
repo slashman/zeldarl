@@ -53,9 +53,9 @@ public class CharAppearances {
 			new CharAppearance("DESERT", '.', ConsoleSystemInterface.YELLOW),
 			new CharAppearance("WATER", '~', ConsoleSystemInterface.DARK_BLUE),
 			new CharAppearance("SHALLOW_WATER", '.', ConsoleSystemInterface.BLUE),
-			new CharAppearance("FOREST_TREE", '♠', ConsoleSystemInterface.BROWN),
+			new CharAppearance("FOREST_TREE", '¥', ConsoleSystemInterface.BROWN),
 			new CharAppearance("CACTUS", '+', ConsoleSystemInterface.GREEN),
-			new CharAppearance("PLAINS_TREE", '♣', ConsoleSystemInterface.GREEN),
+			new CharAppearance("PLAINS_TREE", '¥', ConsoleSystemInterface.GREEN),
 			
 			new CharAppearance("FORESTDUNGEON", '#', ConsoleSystemInterface.RED),
 			new CharAppearance("DESERTDUNGEON", '#', ConsoleSystemInterface.RED),
