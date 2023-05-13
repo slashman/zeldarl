@@ -25,7 +25,7 @@ public class Player extends Actor {
 	public final static int HEARTS_CAP = 80;
 	
 	private String name;
-	private int sex;
+	private int sex = 1;
 	
 	private int baseSightRange;
 	private int heartsMax;

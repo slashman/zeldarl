@@ -22,14 +22,10 @@ public abstract class PlayerGenerator {
 		return (Player) SPECIAL_PLAYERS.get(playerID);
 	}
 	
-	public Player getPlayer(String name, int sex){
+	public Player getPlayer(String name){
 		Player player = new Player();
-		player.setSex(sex);
 		if (name.trim().equals("")){
-			if (sex == Player.MALE)
-				player.setName(Util.randomElementOf(MALE_NAMES));
-			else
-				player.setName(Util.randomElementOf(FEMALE_NAMES));
+			player.setName(Util.randomElementOf(NAMES));
 		} else {
 			player.setName(name);
 		}
@@ -63,8 +59,7 @@ public abstract class PlayerGenerator {
 
 	}
 	
-	protected String [] MALE_NAMES = new String [] {"Link", "Slash", "Adam", "Bjorn", "Anubis", "Adral"};
-	protected String [] FEMALE_NAMES = new String [] {"Zelda","Maiden", "Valentina"};
+	protected String [] NAMES = new String [] {"Link", "Slash", "Adam", "Bjorn", "Anubis", "Adral", "Zelda", "Valentina", "Adriana", "Gaby", "Gabriela"};
 
 
 }
