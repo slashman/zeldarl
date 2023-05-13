@@ -62,7 +62,7 @@ public class ForestMonastery implements DungeonData{
 		for (int i = 0; i < empties; i++){
 			fills.add("EMPTYROOM");
 		}
-		int potions = Util.rand(2,3);
+		int potions = Util.rand(4,5);
 		for (int i = 0; i < potions; i++){
 			fills.add("POTIONROOM");
 		}
