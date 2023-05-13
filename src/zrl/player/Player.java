@@ -907,7 +907,7 @@ public class Player extends Actor {
 			damage -= me.getArmor().getDefense();
 			int blockChance = 0;
 			if (me.getSecondaryWeapon() != null)
-				me.getSecondaryWeapon().getDefense();
+				blockChance = me.getSecondaryWeapon().getDefense();
 			if (getCurrentTactic() == TACTIC_AGRESSIVE)
 				blockChance = (int)(blockChance / 2.0D);
 			if (isProtected())
