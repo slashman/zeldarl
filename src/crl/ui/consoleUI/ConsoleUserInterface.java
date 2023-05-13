@@ -384,15 +384,22 @@ public class ConsoleUserInterface extends UserInterface implements CommandListen
     	int fullHearts = (int)(player.getHearts() / 2.0D);
     	boolean halfHeart = player.getHearts() % 2 == 1;
     	int totalHearts = (int)(player.getHeartsMax() / 2.0D);
-    	si.print(62,1, "--LIFE--", ConsoleSystemInterface.WHITE);
+    	si.print(55,1, "    - - LIFE - -    ", ConsoleSystemInterface.WHITE);
     	si.print(55,2, "                    ", ConsoleSystemInterface.WHITE);
+    	si.print(55,3, "                    ", ConsoleSystemInterface.WHITE);
+    	int curX = 0, curY = 0;
     	for (int i = 0; i < totalHearts; i++){
     		if (i == fullHearts && halfHeart)
-				si.print(55+i,2, 'v', ConsoleSystemInterface.RED);
+				si.print(55 + curX, 2 + curY, 'v', ConsoleSystemInterface.RED);
     		else if (i < fullHearts)
-   				si.print(55+i,2, 'V', ConsoleSystemInterface.RED);
+   				si.print(55 + curX, 2 + curY, 'V', ConsoleSystemInterface.RED);
     		else
-    			si.print(55+i,2, 'V', ConsoleSystemInterface.WHITE);
+    			si.print(55 + curX, 2 + curY, 'V', ConsoleSystemInterface.WHITE);
+    		curX++;
+    		if (curX > 19) {
+    			curX = 0;
+    			curY++;
+    		}
     	}
     	
     	si.print(1,1, "/-\\ /---\\", ConsoleSystemInterface.WHITE);
@@ -466,7 +473,7 @@ public class ConsoleUserInterface extends UserInterface implements CommandListen
 		monstersList.setWidth(27);
 		monstersList.setHeight(10);*/
 		
-		idList.setPosition(59,4);
+		idList.setPosition(59,5);
 		idList.setWidth(20);
 		idList.setHeight(15);
 		si = psi;
