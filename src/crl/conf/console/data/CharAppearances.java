@@ -49,7 +49,7 @@ public class CharAppearances {
 			
 			new CharAppearance("GRASS", '.', ConsoleSystemInterface.BROWN),
 			new CharAppearance("FOREST", '.', ConsoleSystemInterface.GREEN),
-			new CharAppearance("MOUNTAIN", '▒', ConsoleSystemInterface.GRAY),
+			new CharAppearance("MOUNTAIN", '▒', ConsoleSystemInterface.BROWN),
 			new CharAppearance("DESERT", '.', ConsoleSystemInterface.YELLOW),
 			new CharAppearance("WATER", '~', ConsoleSystemInterface.DARK_BLUE),
 			new CharAppearance("SHALLOW_WATER", '.', ConsoleSystemInterface.BLUE),
@@ -69,7 +69,7 @@ public class CharAppearances {
 			new CharAppearance("RUINEDPILLAR", '!', ConsoleSystemInterface.BROWN),
 			new CharAppearance("REDCARPET", '=', ConsoleSystemInterface.RED),
 			new CharAppearance("RUINSWALL", '▒', ConsoleSystemInterface.BROWN),
-			new CharAppearance("RUINSFLOOR", '.', ConsoleSystemInterface.GRAY),
+			new CharAppearance("RUINSFLOOR", '.', ConsoleSystemInterface.WHITE),
 			
 			new CharAppearance("FORESTTEMPLESTATUE", '@', ConsoleSystemInterface.TEAL),
 			new CharAppearance("FORESTTEMPLEWATER", '~', ConsoleSystemInterface.TEAL),
@@ -78,7 +78,7 @@ public class CharAppearances {
 			new CharAppearance("FORESTTEMPLEWALL", '▒', ConsoleSystemInterface.DARK_BLUE),
 			new CharAppearance("FORESTTEMPLEFLOOR", '.', ConsoleSystemInterface.GREEN),
 			
-			new CharAppearance("HOUSEWALL", '▒', ConsoleSystemInterface.BROWN),
+			new CharAppearance("HOUSEWALL", '▒', ConsoleSystemInterface.GRAY),
 			new CharAppearance("HOUSEFLOOR", '.', ConsoleSystemInterface.YELLOW),
 			new CharAppearance("HOUSEDOOR", '/', ConsoleSystemInterface.BROWN),
 			
@@ -97,7 +97,7 @@ public class CharAppearances {
 			new CharAppearance("SANDTEMPLEWALL", '▒', ConsoleSystemInterface.YELLOW),
 			new CharAppearance("SANDTEMPLEFLOOR", '_', ConsoleSystemInterface.BROWN),
 			new CharAppearance("YELLOWCARPET", '=', ConsoleSystemInterface.YELLOW),
-			new CharAppearance("SAND", '≡', ConsoleSystemInterface.YELLOW),
+			new CharAppearance("SAND", '.', ConsoleSystemInterface.YELLOW),
 			new CharAppearance("SANDTEMPLESTATUE", 'h', ConsoleSystemInterface.BROWN),
 			new CharAppearance("SANDTEMPLEPILLAR", '^', ConsoleSystemInterface.BROWN),
 			
