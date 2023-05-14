@@ -16,7 +16,7 @@ public class EmergeMonster extends Action{
 		Emerger em = (Emerger) performer;
 		Monster monster = em.getMonster();
 		monster.setPosition(new Position(em.getPoint()));
-		level.addMonster(monster);
+		level.addSpawnedMonster(monster);
 	}
 
 	public static EmergeMonster getAction(){

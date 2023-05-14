@@ -268,6 +268,7 @@ public class Game implements CommandListener, PlayerEventListener, java.io.Seria
 				player.setHeartsMax(player.getHeartsMax() - 2);
 			}
 			player.recoverHearts(20);
+			currentLevel.obliterateSpawned();
 			player.respawn();
 		}
 	}

@@ -31,6 +31,7 @@ public class Level implements FOVMap, Serializable{
 	private boolean[][][] visible;
 	private boolean[][][] remembered;
 	private VMonster monsters;
+	private VMonster spawnedMonsters;
 	private VFeatures features;
 	private Hashtable smartFeatures = new Hashtable();
 	private Player player;
@@ -137,6 +138,7 @@ public class Level implements FOVMap, Serializable{
 
 	public Level(){
 		monsters = new VMonster(20);
+		spawnedMonsters = new VMonster(20);
 		features = new VFeatures(20);
 		//effects = new VEffect(10);
 		messagesneffects = new SZQueue(50);
@@ -293,6 +295,11 @@ public class Level implements FOVMap, Serializable{
     public void setBoss(Monster what){
     	boss = what;
     	addMonster(what);
+    }
+    
+    public void addSpawnedMonster(Monster what){
+    	spawnedMonsters.addMonster(what);
+    	this.addMonster(what);
     }
 
 	public void addMonster(Monster what){
@@ -717,6 +724,16 @@ public class Level implements FOVMap, Serializable{
 		monsters.removeAll();
 		dispatcher.removeAll();
 		dispatcher.addActor(player);
+	}
+	
+	public void obliterateSpawned(){
+		monsters.removeAll(spawnedMonsters.getVector());
+		dispatcher.removeAll(spawnedMonsters.getVector());
+		spawnedMonsters.removeAll();
+	}
+	
+	public boolean isSpawned(Monster m) {
+		return spawnedMonsters.contains(m);
 	}
 	
 	public void anihilateMonsters(){

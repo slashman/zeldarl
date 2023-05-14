@@ -943,6 +943,10 @@ public class Player extends Actor {
 			gameSessionInfo.setDeathCause(GameSessionInfo.KILLED);
 			gameSessionInfo.setKillerMonster(damager);
 			gameSessionInfo.setDeathLevel(level.getLevelNumber());
+			// The following only applies for "soft" permadeath
+			if (level.isSpawned(damager)) {
+				damager.artificialDeath();
+			}
 			informPlayerEvent(Player.DEATH);
 		}
 	}

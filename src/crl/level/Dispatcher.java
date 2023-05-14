@@ -47,7 +47,7 @@ public class Dispatcher implements java.io.Serializable{
     }
 	
 	public void returnActor(Actor what){
-		if (!actors.contains(what))
+		if (!actors.contains(what) && !what.wannaDie())
 			actors.enqueue(what);
 	}
 
@@ -77,5 +77,9 @@ public class Dispatcher implements java.io.Serializable{
 	
 	public void removeAll(){
 		actors.removeAll();
+	}
+	
+	public void removeAll(Collection c){
+		actors.removeAll(c);
 	}
 }

@@ -95,6 +95,10 @@ public class SZPriorityQueue implements java.io.Serializable{
 		list.removeAllElements();
 	}
 	
+	public void removeAll(Collection c){
+		list.removeAll(c);
+	}
+	
 	public void printStatus(){
 		Debug.say("Status of SZPriorityQueue "+this);
 		for (int i = 0; i < list.size(); i++){

@@ -405,6 +405,12 @@ public class Monster extends Actor implements Cloneable{
 			setFeaturePrize(Util.randomElementOf(prizeList));
 	}
 	
+	
+	public void artificialDeath () {
+		super.die();
+		level.removeMonster(this);
+	}
+	
 	public void die(){
 		super.die();
 		
