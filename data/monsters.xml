@@ -526,7 +526,7 @@
 	<monster 
 		id = "LANDMOLA"
 		appearance = "LANDMOLA"
-		description = "Landmola"
+		description = "Lanmola"
 		rarity = "60"
 		minLevel = "1"
 		score = "5"
@@ -659,7 +659,7 @@
 	<monster 
 		id = "GIANT_LANDMOLA"
 		appearance = "GIANT_LANDMOLA"
-		description = "Giant Landmola"
+		description = "Giant Lanmola"
 		rarity = "60"
 		minLevel = "1"
 		score = "5"
