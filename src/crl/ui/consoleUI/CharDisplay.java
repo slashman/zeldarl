@@ -44,7 +44,7 @@ public class CharDisplay extends Display{
 		si.print((80-tempString.length())/2,11, tempString, ConsoleSystemInterface.WHITE);
 		tempString = "d. Quit";
 		si.print((80-tempString.length())/2,12, tempString, ConsoleSystemInterface.WHITE);
-		tempString = "ZeldaRL v"+Game.getVersion()+", Slash ~ 2007, 2023";
+		tempString = "ZeldaRL v"+Game.getVersion()+", Slash ~ 2007, 2022, 2023";
 		si.print((80-tempString.length())/2,19, tempString, ConsoleSystemInterface.WHITE);
 		tempString = "Zelda and all used names are a copyright of Nintendo";
 		si.print((80-tempString.length())/2,20, tempString, ConsoleSystemInterface.WHITE);
