@@ -264,7 +264,7 @@ public class Game implements CommandListener, PlayerEventListener, java.io.Seria
 		if (permadeath) {
 			finishGame();
 		} else {
-			if (player.getHeartsMax() > 6) {
+			if (player.getHeartsMax() > 10) {
 				player.setHeartsMax(player.getHeartsMax() - 2);
 			}
 			player.recoverHearts(20);
