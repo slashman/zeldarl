@@ -527,7 +527,7 @@ public class Player extends Actor {
 					SFXManager.play("wav/LTTP_ItemFanfare.wav");
 					level.destroyFeature(destinationFeature);
 				}else if (destinationFeature.getEffect().equals("HEART_CONTAINER")){
-					setHeartsMax(getHeartsMax()+ 2 * 3 );
+					setHeartsMax(getHeartsMax() + 2 * 2 );
 					setHearts(getHeartsMax());
 					level.addMessage("You get a heart container!!");
 					SFXManager.play("wav/LTTP_Get_HeartContainer.wav");

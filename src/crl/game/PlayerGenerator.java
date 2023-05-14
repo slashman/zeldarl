@@ -37,8 +37,8 @@ public abstract class PlayerGenerator {
 		player.setCastCost(50);
 		player.setCarryMax(20);
 		
-		player.setHeartsMax(12 * 3);
-		player.setHearts(12 * 3);
+		player.setHeartsMax(12 * 2);
+		player.setHearts(12 * 2);
 		
 		player.setMagicMax(9);
 		player.setMagic(9);
