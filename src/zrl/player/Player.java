@@ -904,7 +904,7 @@ public class Player extends Actor {
 		if (this instanceof Player){
 			Player me = (Player) this;
 			int damage = attacker.getDamage()+damagePlus;
-			damage -= me.getArmor().getDefense();
+			damage -= Util.rand(0, me.getArmor().getDefense());
 			int blockChance = 0;
 			if (me.getSecondaryWeapon() != null)
 				blockChance = me.getSecondaryWeapon().getDefense();

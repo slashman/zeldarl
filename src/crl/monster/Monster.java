@@ -540,7 +540,7 @@ public class Monster extends Actor implements Cloneable{
 		
 		int weaponAttack = attacker.getAttackBonus();
 		if (weapon != null)
-			weaponAttack = weapon.getAttack();
+			weaponAttack = Util.rand(1, weapon.getAttack());
 		
 		attacker.doHit(true);
 		if (hasCounter("SLEEP")){
