@@ -103,8 +103,6 @@ public class MonsterMissile extends Action{
 			        }else if (effectType.equals("directionalmissile")){
 			        	drawEffect(EffectFactory.getSingleton().createDirectedEffect(aMonster.getPosition(), targetPosition, effectID , i-1));
 			        }
-					
-					aLevel.addBlood(destinationPoint, 1);
 					if (statusEffect != null){
 						if (statusEffect.equals(Player.STATUS_STUN)){
 							aLevel.addMessage("You are stunned!");

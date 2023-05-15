@@ -917,9 +917,11 @@ public class Player extends Actor {
 			if (isRanged && incomingDirection == Action.oppositeFrom(this.lastWalkingDirection)) {
 				blockChance = 100;
 			}
+			boolean blocked = false;
 			if (me.getSecondaryWeapon() != null && me.getSecondaryWeapon().getDefinition().getEquipCategory().equals(ItemDefinition.CAT_SHIELD) && Util.chance(blockChance)){
 				level.addMessage("You block the attack with your "+me.getSecondaryWeapon().getDescription()+"!");
 				SFXManager.play("wav/LTTP_Shield.wav");
+				blocked = true;
 			} else{
 				level.addMessage("The "+attacker.getDescription()+" hits you!");
 				SFXManager.play("wav/LTTP_Link_Hurt.wav");
@@ -928,6 +930,9 @@ public class Player extends Actor {
 			if (getFlag("COMBAT_COUNTER") && Util.chance(40)){
 				level.addMessage("You counter attack!");
 				attacker.tryHit(this, getWeapon(), false, false, Action.SELF);
+			}
+			if (!blocked) {
+				level.addBlood(getPosition(), 1);
 			}
 			return true;
 		} else {
