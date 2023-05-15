@@ -144,11 +144,11 @@ public class CharDisplay extends Display{
 		tb2.setWidth(79);
 
 		tb1.setText(
-"After you put the three canes over the altars, a shimmering blast of light covers all the "+
+"After you put the three canes over the altars, a shimmering blast of light covers the "+
 "temple, and the monsters vanish... A voice thunders all around the place... \"The portal to Byrna has been opened, go in and find the answers to your questions\"");
 
 		tb2.setText(
-"You step into the portal and appear into a world devasted by cold and snow. The adventure has just begun.");
+"You step into the portal and appear in a world devasted by cold and snow. The adventure has just begun.");
 
 		tb1.draw();
 		tb2.draw();
@@ -158,9 +158,9 @@ public class CharDisplay extends Display{
 		si.cls();
 		tb1.clear();tb2.clear();
 		tb1.setText(
-				"Congratulations! You have finished the 7DRL version of ZeldaRL. As you may have noticed, "+
+				"Congratulations! You have finished this version of ZeldaRL. As you may have noticed, "+
 				"there are lots of things to improve. All your comments at the official website, " +
-				"http://www.santiagoz.com/web are more than welcome!");
+				"https://slash.itch.io/zeldarl are more than welcome!");
 
 						tb2.setText(
 				"Let's work together to shape this into a great game! Thank you for playing!");
