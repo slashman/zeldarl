@@ -2,6 +2,7 @@ package crl.action;
 
 import sz.util.Debug;
 import zrl.player.Player;
+import crl.game.SFXManager;
 import crl.item.Item;
 import crl.level.Level;
 
@@ -27,6 +28,11 @@ public class Get extends Action{
 				aLevel.addMessage("You pick up the "+destinationItem.getDescription()+".");
 				aPlayer.addItem(destinationItem);
 				aLevel.removeItemFrom(destinationItem, performer.getPosition());
+				if (!aPlayer.getFlag("PICKED_"+destinationItem.getDefinition().getID())) {
+					aPlayer.setFlag("PICKED_"+destinationItem.getDefinition().getID(), true);
+					aLevel.addMessage(destinationItem.getDefinition().getMenuDescription());
+					SFXManager.play("wav/LTTP_ItemFanfare.wav");
+				}
 			} else {
 				aLevel.addMessage("You have many things already to pick up the "+destinationItem.getDescription()+"!.");
 			}
