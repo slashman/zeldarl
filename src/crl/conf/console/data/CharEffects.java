@@ -43,21 +43,16 @@ public class CharEffects {
 		new CharFlashEffect("SFX_THUNDER_FLASH", ConsoleSystemInterface.WHITE),
 		
 		//Weapons
-		new CharMeleeEffect("SFX_WP_FIGHTERSWORD","||--/\\\\/", ConsoleSystemInterface.GRAY),
-		new CharMeleeEffect("SFX_WP_SWORD","||--/\\\\/", ConsoleSystemInterface.GRAY),
-		new CharMeleeEffect("SFX_WP_ENILNO","||--/\\\\/", ConsoleSystemInterface.CYAN),
-		new CharMeleeEffect("SFX_WP_GREAT_SWORD","||--/\\\\/", ConsoleSystemInterface.GRAY),
-		new CharMeleeEffect("SFX_WP_BATTLE_AXE","||--/\\\\/", ConsoleSystemInterface.GRAY),
-		new CharMeleeEffect("SFX_WP_ROPE_SPIKE","||--/\\\\/", ConsoleSystemInterface.BROWN),
-		new CharMeleeEffect("SFX_WP_LIGHT_SWORD","||--/\\\\/", ConsoleSystemInterface.CYAN),
-		new CharIconMissileEffect("SFX_WP_PISTOL", '\'', ConsoleSystemInterface.GRAY, 40),
+		new CharMeleeEffect("SFX_WP_IRON_SWORD","||--/\\\\/", ConsoleSystemInterface.GRAY),
+		new CharMeleeEffect("SFX_WP_RAZOR_SWORD","||--/\\\\/", ConsoleSystemInterface.GRAY),
+		new CharMeleeEffect("SFX_WP_EVILS_BANE","||--/\\\\/", ConsoleSystemInterface.GRAY),
+		new CharMeleeEffect("SFX_WP_BLESSED_SWORD","||--/\\\\/", ConsoleSystemInterface.GRAY),
+		new CharMeleeEffect("SFX_WP_ANCIENT_SWORD","||--/\\\\/", ConsoleSystemInterface.GRAY),
+		new CharMeleeEffect("SFX_WP_ENCHANTED_SWORD","||--/\\\\/", ConsoleSystemInterface.GRAY),
+		
 		new CharIconMissileEffect("SFX_WP_BOW_ARROWS", '\'', ConsoleSystemInterface.GRAY, 40),
-		new CharIconMissileEffect("SFX_WP_RONDORIN_BOW", '\'', ConsoleSystemInterface.GRAY, 40),
-		new CharAnimatedMissileEffect("SFX_WP_PHAZER", ".*", ConsoleSystemInterface.CYAN, 40),
-		new CharAnimatedMissileEffect("SFX_WP_BLASTER", ".*", ConsoleSystemInterface.RED, 150),
 		
 		new CharAnimatedMissileEffect("SFX_BOOMERANG", "<V>^", ConsoleSystemInterface.BLUE, 40),
-		new CharDirectionalMissileEffect("SFX_WP_BOW", "\\|/--/|\\", ConsoleSystemInterface.GRAY, 40),
 		
 		new CharAnimatedMissileEffect("SFX_LIGHTBALL", "o-", ConsoleSystemInterface.WHITE, 40),
 		new CharAnimatedMissileEffect("SFX_FIREBALL", "o-", ConsoleSystemInterface.RED, 40),

@@ -50,10 +50,10 @@ public abstract class PlayerGenerator {
 		else
 			player.setAppearance(apf.getAppearance("AVATAR_F"));
 		
-		player.setWeapon(itf.createItem("FIGHTERSWORD"));
-		player.setArmor(itf.createItem("GREENMAIL"));
+		player.setWeapon(itf.createItem("IRON_SWORD"));
+		player.setArmor(itf.createItem("GREEN_TUNIC"));
 		player.setArrows(5);
-		player.setSecondaryWeapon(itf.createItem("WARRIOR_SHIELD"));
+		player.setSecondaryWeapon(itf.createItem("BUCKLER"));
 
 		return player;
 

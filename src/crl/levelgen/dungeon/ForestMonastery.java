@@ -66,6 +66,10 @@ public class ForestMonastery implements DungeonData{
 		for (int i = 0; i < potions; i++){
 			fills.add("POTIONROOM");
 		}
+		int prizes= Util.rand(1,2);
+		for (int i = 0; i < prizes; i++){
+			fills.add("PRIZEROOM");
+		}
 	}
 	
 	
@@ -94,6 +98,7 @@ public class ForestMonastery implements DungeonData{
 	charMap.put(".", "FORESTTEMPLEFLOOR");
 	charMap.put("=", "GREENCARPET");
 	charMap.put("!", "FORESTTEMPLEFLOOR PRIZE POTION");
+	charMap.put("*", "FORESTTEMPLEFLOOR PRIZE PRIZE");
 	charMap.put("/", "DUNGEON_DOOR");
 	charMap.put("W", "FORESTTEMPLEWATER");
 	charMap.put("B", "FORESTTEMPLESTATUE");

@@ -62,6 +62,10 @@ public class TempleRuins implements DungeonData{
 		for (int i = 0; i < potions; i++){
 			fills.add("POTIONROOM");
 		}
+		int prizes= Util.rand(1,2);
+		for (int i = 0; i < prizes; i++){
+			fills.add("PRIZEROOM");
+		}
 	}
 	
 	
@@ -96,6 +100,7 @@ public class TempleRuins implements DungeonData{
 	charMap.put(">", "STAIRSDOWN");
 	charMap.put("<", "STAIRSUP");
 	charMap.put("!", "RUINSFLOOR PRIZE POTION");
+	charMap.put("*", "RUINSFLOOR PRIZE PRIZE");
 	
 	charMap.put("S", "REDCARPET EXIT _START");
 	charMap.put("O", "REDCARPET EXIT OVERWORLD");

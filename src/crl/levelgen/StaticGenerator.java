@@ -18,6 +18,21 @@ public class StaticGenerator {
 	private String[][] level;
 	private String[][] inhabitants;
 	private final String[] POTION_IDS = new String[]{"HEALTH_POTION","MAGIC_POTION", "FULL_POTION"};
+	private final String[] PRIZE_IDS = new String[]{
+			"RAZOR_SWORD",
+			"GIANT_KNIFE",
+			"EVILS_BANE",
+			"BLESSED_SWORD",
+			"ANCIENT_SWORD",
+			"ENCHANTED_SWORD",
+			"PADDED_ARMOR",
+			"PLATE_ARMOR",
+			"BUCKLER",
+			"WOODEN_SHIELD",
+			"MIRROR_SHIELD",
+			"CREST_SHIELD",
+			"RED_SHIELD",
+	};
 	//private Position startPosition, endPosition;
 
 	public void reset(){
@@ -79,7 +94,11 @@ public class StaticGenerator {
 								Item vItem = ItemFactory.getItemFactory().createItemForLevel(levelNumber+3);
 								if (vItem != null)
 									l.addItem(new Position(where.x+x,where.y+y,where.z), vItem);
-							}  
+							} else if (cmds[2].equals("PRIZE")){
+								Item vItem = ItemFactory.getItemFactory().createItem(Util.randomElementOf(PRIZE_IDS));
+								if (vItem != null)
+									l.addItem(new Position(where.x+x,where.y+y,where.z), vItem);
+							}
 						}else
 					if (cmds[1].equals("EXIT")){
 						l.addExit(new Position(where.x+x,where.y+y,where.z), cmds[2]);
@@ -165,7 +184,11 @@ public class StaticGenerator {
 									Item vItem = ItemFactory.getItemFactory().createItemForLevel(ret.getLevelNumber()+3);
 									if (vItem != null)
 										ret.addItem(new Position(x,y,z), vItem);
-								}  
+								} else if (cmds[2].equals("PRIZE")){
+									Item vItem = ItemFactory.getItemFactory().createItem(Util.randomElementOf(PRIZE_IDS));
+									if (vItem != null)
+										ret.addItem(new Position(x,y,z), vItem);
+								}
 							}else
 						if (cmds[1].equals("EXIT")){
 							ret.addExit(new Position(x,y,z), cmds[2]);

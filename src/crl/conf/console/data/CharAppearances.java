@@ -109,8 +109,11 @@ public class CharAppearances {
 			
 			new CharAppearance("RAFT", '#', ConsoleSystemInterface.BROWN),
 			
-			new CharAppearance("WARRIOR_SHIELD", '[', ConsoleSystemInterface.BLUE),
-			new CharAppearance("RED_SHIELD", '[', ConsoleSystemInterface.RED),
+			new CharAppearance("BUCKLER", '[', ConsoleSystemInterface.BLUE),
+			new CharAppearance("WOODEN_SHIELD", '[', ConsoleSystemInterface.BLUE),
+			new CharAppearance("MIRROR_SHIELD", '[', ConsoleSystemInterface.BLUE),
+			new CharAppearance("CREST_SHIELD", '[', ConsoleSystemInterface.BLUE),
+			new CharAppearance("RED_SHIELD", '[', ConsoleSystemInterface.BLUE),
 			
 			new CharAppearance("ARMOS_KNIGHT", 'K', ConsoleSystemInterface.BLUE),
 			new CharAppearance("GOLEM_GUARD", 'G', ConsoleSystemInterface.BROWN),
@@ -213,8 +216,17 @@ public class CharAppearances {
 			new CharAppearance("AVATAR_F", '@', ConsoleSystemInterface.PURPLE),
 	        
 			// Items
-			new CharAppearance("FIGHTERSWORD",'\\', ConsoleSystemInterface.LIGHT_GRAY),
-			new CharAppearance("GREENMAIL",'T', ConsoleSystemInterface.GREEN),
+			new CharAppearance("IRON_SWORD",'\\', ConsoleSystemInterface.LIGHT_GRAY),
+			new CharAppearance("RAZOR_SWORD",'\\', ConsoleSystemInterface.LIGHT_GRAY),
+			new CharAppearance("GIANT_KNIFE",'\\', ConsoleSystemInterface.LIGHT_GRAY),
+			new CharAppearance("EVILS_BANE",'\\', ConsoleSystemInterface.LIGHT_GRAY),
+			new CharAppearance("BLESSED_SWORD",'\\', ConsoleSystemInterface.LIGHT_GRAY),
+			new CharAppearance("ANCIENT_SWORD",'\\', ConsoleSystemInterface.LIGHT_GRAY),
+			new CharAppearance("ENCHANTED_SWORD",'\\', ConsoleSystemInterface.LIGHT_GRAY),
+			
+			new CharAppearance("GREEN_TUNIC",'T', ConsoleSystemInterface.GREEN),
+			new CharAppearance("PADDED_ARMOR",'T', ConsoleSystemInterface.GREEN),
+			new CharAppearance("PLATE_ARMOR",'T', ConsoleSystemInterface.GREEN),
 			
 	        new CharAppearance("DAGGER", '\\', ConsoleSystemInterface.LIGHT_GRAY),
 	        new CharAppearance("MACE", ')', ConsoleSystemInterface.RED),
@@ -226,7 +238,7 @@ public class CharAppearances {
 	        new CharAppearance("PISTOL", '{', ConsoleSystemInterface.GRAY),
 	        new CharAppearance("LIGHT_SWORD", '\\', ConsoleSystemInterface.CYAN),
 	        new CharAppearance("ENILNO", '\\', ConsoleSystemInterface.CYAN),
-	        new CharAppearance("PHAZER", '}', ConsoleSystemInterface.WHITE),
+  	        new CharAppearance("PHAZER", '}', ConsoleSystemInterface.WHITE),
 	        new CharAppearance("BLASTER", '[', ConsoleSystemInterface.LEMON),
 	        new CharAppearance("LEATHER", ']', ConsoleSystemInterface.BROWN),
 	        new CharAppearance("CHAIN_MAIL", ']', ConsoleSystemInterface.GRAY),

@@ -65,6 +65,10 @@ public class TempleOfSands implements DungeonData{
 		for (int i = 0; i < potions; i++){
 			fills.add("POTIONROOM");
 		}
+		int prizes= Util.rand(1,2);
+		for (int i = 0; i < prizes; i++){
+			fills.add("PRIZEROOM");
+		}
 	}
 	
 	
@@ -99,6 +103,7 @@ public class TempleOfSands implements DungeonData{
 	charMap.put(">", "STAIRSDOWN");
 	charMap.put("<", "STAIRSUP");
 	charMap.put("!", "SANDTEMPLEFLOOR PRIZE POTION");
+	charMap.put("*", "SANDTEMPLEFLOOR PRIZE PRIZE");
 	
 	charMap.put("S", "YELLOWCARPET EXIT _START");
 	charMap.put("O", "YELLOWCARPET EXIT OVERWORLD");
