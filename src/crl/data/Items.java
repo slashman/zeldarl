@@ -92,7 +92,7 @@ public class Items {
 			new ItemDefinition ("ENCHANTED_SWORD","Enchanted Sword","ENCHANTED_SWORD","",false,70,4,2,0,0,0,false,"",7,100,"Infused with magic.",0,0,"MELEE 2 9 30",true,"","WEAPON",true),
 			new ItemDefinition ("GREEN_TUNIC","Green Tunic","GREEN_TUNIC","",false,0,0,0,0,0,0,false,"",4,100,"Green Tunic",0,30,"",false,"","ARMOR",true),
 			new ItemDefinition ("PADDED_ARMOR","Padded armor","PADDED_ARMOR","",false,0,0,0,0,0,0,false,"",4,100,"Armos featuring thick leather pads.",1,30,"",false,"","ARMOR",true),
-			new ItemDefinition ("PLATE_ARMOR","Plate Armor","PLATE_ARMOR","",false,0,0,0,0,0,0,false,"",4,100,"A suit of armor made from a combination of iron playes and chain mail.",2,30,"",false,"","ARMOR",true),
+			new ItemDefinition ("PLATE_ARMOR","Plate Armor","PLATE_ARMOR","",false,0,0,0,0,0,0,false,"",4,100,"A suit of armor made from a combination of iron plates and chain mail.",2,30,"",false,"","ARMOR",true),
 			new ItemDefinition ("BOW","Hylian Bow","BOW","",false,100,1,10,1,50,1,false,"",5,100,"Shoots arrow at expense of rupees.",0,0,"MISSILE 10 9 10 false",false,"","WEAPON",true),
 			new ItemDefinition ("HEALTH_POTION","Red Potion","HEALTH_POTION","RECOVERP 100",true,0,0,0,0,0,0,false,"You drink the red potion, you feel much better!",1,100,"Recovers all your hearts.",0,0,"",true,"","",false),
 			new ItemDefinition ("MAGIC_POTION","Green Potion","MAGIC_POTION","RECOVERMANAP 100",true,0,0,0,0,0,0,false,"You drink the green potion. Your magic revitalizes!",1,100,"Recovers all your magic.",0,0,"",true,"","",false),
