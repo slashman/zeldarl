@@ -96,7 +96,7 @@ public class TempleOfSands implements DungeonData{
 	charMap.put("#", "SANDTEMPLEWALL");
 	charMap.put(".", "SANDTEMPLEFLOOR");
 	charMap.put("=", "YELLOWCARPET");
-	charMap.put("/", "DUNGEON_DOOR");
+	charMap.put("/", "SANDTEMPLEFLOOR");
 	charMap.put("W", "SAND");
 	charMap.put("B", "SANDTEMPLESTATUE");
 	charMap.put("P", "SANDTEMPLEPILLAR");
@@ -112,9 +112,9 @@ public class TempleOfSands implements DungeonData{
 	else
 		charMap.put("D", "SANDTEMPLEFLOOR MONSTER GIANT_LANDMOLA");
 	
-	charMap.put("$", "DUNGEON_DOOR FEATURE LOCKED_DOOR");
-	charMap.put("%", "DUNGEON_DOOR FEATURE BOSS_DOOR");
-	charMap.put("&", "DUNGEON_DOOR FEATURE TREASURE_DOOR");
+	charMap.put("$", "SANDTEMPLEFLOOR FEATURE LOCKED_DOOR");
+	charMap.put("%", "SANDTEMPLEFLOOR FEATURE BOSS_DOOR");
+	charMap.put("&", "SANDTEMPLEFLOOR FEATURE TREASURE_DOOR");
 	
 	charMap.put("k", "SANDTEMPLEFLOOR FEATURE SMALL_KEY");
 	charMap.put("K", "YELLOWCARPET FEATURE BIG_KEY");

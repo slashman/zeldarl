@@ -84,7 +84,7 @@ public class AdamantCave implements DungeonData{
 	charMap.put("#", "ADAMANTWALL");
 	charMap.put(".", "ADAMANTFLOOR");
 	charMap.put("=", "ADAMANTFLOOR");
-	charMap.put("/", "DUNGEON_DOOR");
+	charMap.put("/", "ADAMANTFLOOR");
 	charMap.put("W", "WATER");
 	charMap.put("B", "ADAMANTWALL");
 	charMap.put("P", "ADAMANTWALL");
@@ -96,9 +96,9 @@ public class AdamantCave implements DungeonData{
 	charMap.put("D", "ADAMANTFLOOR MONSTER LIGHT_SHADE");
 	charMap.put("i", "FIREPIT");
 	
-	charMap.put("$", "DUNGEON_DOOR FEATURE LOCKED_DOOR");
-	charMap.put("%", "DUNGEON_DOOR FEATURE BOSS_DOOR");
-	charMap.put("&", "DUNGEON_DOOR FEATURE TREASURE_DOOR");
+	charMap.put("$", "ADAMANTFLOOR FEATURE LOCKED_DOOR");
+	charMap.put("%", "ADAMANTFLOOR FEATURE BOSS_DOOR");
+	charMap.put("&", "ADAMANTFLOOR FEATURE TREASURE_DOOR");
 	
 	charMap.put("k", "ADAMANTFLOOR FEATURE SMALL_KEY");
 	charMap.put("K", "ADAMANTFLOOR FEATURE BIG_KEY");

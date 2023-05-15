@@ -93,7 +93,7 @@ public class TempleRuins implements DungeonData{
 	charMap.put("#", "RUINSWALL");
 	charMap.put(".", "RUINSFLOOR");
 	charMap.put("=", "REDCARPET");
-	charMap.put("/", "DUNGEON_DOOR");
+	charMap.put("/", "RUINSFLOOR");
 	charMap.put("W", "WATER");
 	charMap.put("B", "STATUE");
 	charMap.put("P", "RUINEDPILLAR");
@@ -109,9 +109,9 @@ public class TempleRuins implements DungeonData{
 	else
 		charMap.put("D", "RUINSFLOOR MONSTER ARMOS_KNIGHT");
 	
-	charMap.put("$", "DUNGEON_DOOR FEATURE LOCKED_DOOR");
-	charMap.put("%", "DUNGEON_DOOR FEATURE BOSS_DOOR");
-	charMap.put("&", "DUNGEON_DOOR FEATURE TREASURE_DOOR");
+	charMap.put("$", "RUINSFLOOR FEATURE LOCKED_DOOR");
+	charMap.put("%", "RUINSFLOOR FEATURE BOSS_DOOR");
+	charMap.put("&", "RUINSFLOOR FEATURE TREASURE_DOOR");
 	
 	charMap.put("k", "RUINSFLOOR FEATURE SMALL_KEY");
 	charMap.put("K", "REDCARPET FEATURE BIG_KEY");

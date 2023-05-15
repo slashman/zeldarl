@@ -99,7 +99,7 @@ public class ForestMonastery implements DungeonData{
 	charMap.put("=", "GREENCARPET");
 	charMap.put("!", "FORESTTEMPLEFLOOR PRIZE POTION");
 	charMap.put("*", "FORESTTEMPLEFLOOR PRIZE PRIZE");
-	charMap.put("/", "DUNGEON_DOOR");
+	charMap.put("/", "FORESTTEMPLEFLOOR");
 	charMap.put("W", "FORESTTEMPLEWATER");
 	charMap.put("B", "FORESTTEMPLESTATUE");
 	charMap.put("P", "FORESTTEMPLEPILLAR");
@@ -113,9 +113,9 @@ public class ForestMonastery implements DungeonData{
 	else
 		charMap.put("D", "FORESTTEMPLEFLOOR MONSTER MOSS_SHADE");
 	
-	charMap.put("$", "DUNGEON_DOOR FEATURE LOCKED_DOOR");
-	charMap.put("%", "DUNGEON_DOOR FEATURE BOSS_DOOR");
-	charMap.put("&", "DUNGEON_DOOR FEATURE TREASURE_DOOR");
+	charMap.put("$", "FORESTTEMPLEFLOOR FEATURE LOCKED_DOOR");
+	charMap.put("%", "FORESTTEMPLEFLOOR FEATURE BOSS_DOOR");
+	charMap.put("&", "FORESTTEMPLEFLOOR FEATURE TREASURE_DOOR");
 	
 	charMap.put("k", "FORESTTEMPLEFLOOR FEATURE SMALL_KEY");
 	charMap.put("K", "GREENCARPET FEATURE BIG_KEY");
