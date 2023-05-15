@@ -64,7 +64,7 @@ public class TempleRuins implements DungeonData{
 		}
 		int prizes= Util.rand(1,2);
 		for (int i = 0; i < prizes; i++){
-			fills.add("PRIZEROOM");
+			fills.add("WEAPONROOM");
 		}
 	}
 	

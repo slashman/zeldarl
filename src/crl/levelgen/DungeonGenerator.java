@@ -126,7 +126,7 @@ public class DungeonGenerator extends LevelGenerator{
 			ret[5] = "#.........k.........#";
 		if (room.getRoomType().equals("POTIONROOM"))
 			ret[5] = "#.........!.........#";
-		if (room.getRoomType().equals("PRIZEROOM")) {
+		if (room.getRoomType().equals("WEAPONROOM")) {
 			ret[5] = "#.........*.........#";
 		}
 		if (room.getRoomType().equals("COMPASSROOM"))
